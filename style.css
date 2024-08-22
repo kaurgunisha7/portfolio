@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #b2d8d8, #2f8d8d); 
+    background: linear-gradient(to right, #c2e5e5, #2b8f8f); 
     color: #004c4c;
     overflow-x: hidden;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 .sidebar nav li a:hover {
-    color: #1abc9c;
+    color: #008080;
 }
 
 .container {
@@ -195,7 +195,7 @@ body {
 }
 
 .buttons button:hover {
-    background-color: #16a085;
+    background-color: #008080;
 }
 
 /* Contact Page */
@@ -243,7 +243,7 @@ body {
 }
 
 .contact-link:hover {
-    color: #66b2b2;
+    color: #008080;
 }
 
 .contact-link i {
@@ -295,7 +295,7 @@ body {
 }
 
 #contactsForm button[type="submit"]:hover {
-    background-color: #16a085;
+    background-color: #008080;
 }
 
 /* Skills Page */
@@ -460,51 +460,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Tablet Responsiveness */
-@media (max-width: 992px) {
-    .projectItem {
-        width: calc(45% - 40px);
-    }
-    .animated-heading{
-        font-size: 1.5rem;
-    }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 600px) {
-    #projects h1 {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
-    }
-    
-    .projectItem {
-        width: 100%;
-    }
-    
-    .projectItem h3, .projectItem p {
-        margin: 15px;
-    }
-    .animated-heading{
-        font-size: 1.7rem;
-    }
-}
-
-@media (max-width: 1326px) {
-    .devPic img {
-        height: 20vh; /* Adjust for smaller screens */
-    }
-    .skills_main {
-        grid-template-columns: 1fr;
-    }
-    .main {
-        margin-left: 0;
-        width: 100%;
-    }
-    .animated-heading{
-        font-size: 3rem;
-    }
-}
-
 .hamburger {
     position: fixed;
     top: 10px;
@@ -555,8 +510,7 @@ body {
 
 
 
-/* Responsive Design */
-@media (max-width: 1330px) {
+@media (max-width: 1326px) {
     .devPic img {
         height: 60vh; /* Adjust for smaller screens */
     }
@@ -567,11 +521,45 @@ body {
         margin-left: 0;
         width: 100%;
     }
-    .contact-content{
-        gap: 500px;  
+    .animated-heading {
+        font-size: 3rem;
+    }
+    .contact-content {
+        gap: 500px;
+    }
+
+}
+@media (max-width: 1087px){
+    .animated-heading{
+        font-size: 2.5rem;
+    }
+    .contact-content {
+        gap: 300px;
+    }
+
+}
+
+/* Styles for screen widths of 992px and below */
+@media (max-width: 992px) {
+    .projectItem {
+        width: calc(45% - 40px);
+    }
+    .animated-heading {
+        font-size: 2.25rem;
     }
 }
 
+@media (max-width: 823px) {
+    .animated-heading {
+        font-size: 2rem;
+    }
+    .contact-content {
+        gap: 200px;
+    }
+
+}
+
+/* Styles for screen widths of 768px and below */
 @media (max-width: 768px) {
     .sidebar {
         width: 150px;
@@ -598,24 +586,58 @@ body {
     .projectItem {
         max-width: 100%;
     }
-    .cross{
-        margin-left:100px;
+    .cross {
+        margin-left: 100px;
     }
-    .contact-content{
+    .contact-content {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         gap: 20px;
-        
     }
-    #contact h1{
+    #contact h1 {
         font-size: 2rem;
         text-align: center;
     }
-    .about{
+    .about {
         font-size: 3rem;
     }
-    .mb-3 label{
+    .mb-3 label {
         font-size: 1.25rem;
+    }
+    .animated-heading {
+        font-size: 3rem;
     }
 }
 
+/* Mobile Responsiveness: Styles for screen widths of 600px and below */
+@media (max-width: 600px) {
+    #projects h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .projectItem {
+        width: 100%;
+    }
+    
+    .projectItem h3, .projectItem p {
+        margin: 15px;
+    }
+    .animated-heading {
+        font-size: 1.7rem;
+    }
+    .animated-heading {
+        font-size: 2rem;
+    }
+    .ham{
+        font-size: 1.75rem;
+    }
+}
+@media (max-width: 380px){
+    .animated-heading {
+        font-size: 1.85rem;
+    }
+    .ham{
+        font-size: 1.5rem;
+    }
+}
