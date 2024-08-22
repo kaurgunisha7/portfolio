@@ -154,8 +154,9 @@ body {
 }
 
 #about p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 40px;
+    margin-right:50px;
 }
 
 .moreAbout {
@@ -518,8 +519,8 @@ body {
         grid-template-columns: 1fr;
     }
     .main {
-        margin-left: 0;
-        width: 100%;
+        margin: 0 auto;
+        width: 90%;
     }
     .animated-heading {
         font-size: 3rem;
