@@ -539,6 +539,12 @@ body {
     .contact-content {
         gap: 300px;
     }
+    #about p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        margin-right:0;
+    }
+
 
 }
 
@@ -549,6 +555,11 @@ body {
     }
     .animated-heading {
         font-size: 2.25rem;
+    }.skill_bar .bar{
+        width:100%;
+    }
+    .skill_bar .info p{
+        margin-right:0;
     }
 }
 
@@ -559,6 +570,13 @@ body {
     .contact-content {
         gap: 200px;
     }
+    .skill_bar .bar{
+        width:100%;
+    }
+    .skill_bar .info p{
+        margin-right:0;
+    }
+
 
 }
 
@@ -610,6 +628,12 @@ body {
     .animated-heading {
         font-size: 3rem;
     }
+    .skill_bar .bar{
+        width:100%;
+    }
+    .skill_bar .info p{
+        margin-right:0;
+    }
 }
 
 /* Mobile Responsiveness: Styles for screen widths of 600px and below */
@@ -635,6 +659,12 @@ body {
     .ham{
         font-size: 1.75rem;
     }
+    .skill_bar .info p{
+        margin-right:0;
+    }
+    .skill_bar .bar{
+        width:100%;
+    }
 }
 @media (max-width: 380px){
     .animated-heading {
@@ -642,5 +672,11 @@ body {
     }
     .ham{
         font-size: 1.5rem;
+    }
+    .skill_bar .info p{
+        margin-right:0;
+    }
+    .skill_bar .bar{
+        width:100%;
     }
 }
